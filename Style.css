@@ -1,0 +1,82 @@
+body{
+    background-image: url(./Resources/BWpromo.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: "montserrat";
+}
+
+header {
+    position: static;
+}
+
+.imgLogo {
+    display: block;
+    margin: 20px auto 10px auto;  
+    text-align: center;
+    position: sticky;
+    float: top;    
+}
+
+.links {
+    font-family: 'Bebas neue';
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    background: rgba(240, 248, 255, .5);    
+}
+
+.socials {
+   
+    float: left;
+    font-family: 'Bebas Neue';
+    margin: 50px auto 20px auto;
+    width: 10%;
+    display: block;
+    background: rgba(240, 248, 255, .5);
+}
+
+.title {
+    margin: 0px auto 0px auto;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px darkgrey;
+}
+
+.image{
+    margin: 5px auto 10px auto;
+    height: 75px;
+    width: 75px;
+}
+
+.quotes {
+    font-weight: bolder;
+    text-shadow: 2px 2px darkgrey;
+}
+
+.frontPageText {
+    display: block;
+    width: 50%;
+    margin: 50px auto 20px auto;
+    background: rgba(240, 248, 255, .75);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.player {
+    float: right;
+    font-family: 'Bebas Neue';
+    margin: 50px auto 20px auto;
+    width: 10%;
+    display: block;
+    background: rgba(240, 248, 255, .5);
+}
+
+#headerLinks {
+    color: cadetblue;
+    text-align: center;
+}
+
+
+
+
