@@ -1,4 +1,5 @@
 body{
+    top: ;
     background-image: url(./Resources/BWpromo.jpeg);
     background-attachment: fixed;
     background-size: 100%;
@@ -6,7 +7,37 @@ body{
 }
 
 header {
-    position: static;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    display: block;
+}
+
+.containerRow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.counterCol {
+    margin: 20px 100px 10px auto;
+    width: 50%;    
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frontPageText {
+    margin: 50px auto 20px auto;
+    width: 50%;
+    position: relative;
+    display: block;
+    background: rgba(240, 248, 255, .75);
+    text-align: center;
+    font-weight: bolder;
 }
 
 .imgLogo {
@@ -22,15 +53,13 @@ header {
     font-size: 40px;
     font-weight: bolder;
     width: 100%;
-    background: rgba(240, 248, 255, .5);    
+    background: rgba(240, 248, 255, .5);  
+    position: sticky;  
 }
 
 .socials {
-   
-    float: left;
     font-family: 'Bebas Neue';
     margin: 50px auto 20px auto;
-    width: 10%;
     display: block;
     background: rgba(240, 248, 255, .5);
 }
@@ -54,22 +83,8 @@ header {
     text-shadow: 2px 2px darkgrey;
 }
 
-.frontPageText {
-    display: block;
-    width: 50%;
-    margin: 50px auto 20px auto;
-    background: rgba(240, 248, 255, .75);
-    text-align: center;
-    font-weight: bolder;
-}
-
 .player {
-    float: right;
-    font-family: 'Bebas Neue';
-    margin: 50px auto 20px auto;
-    width: 10%;
-    display: block;
-    background: rgba(240, 248, 255, .5);
+    display: inline-block;
 }
 
 #headerLinks {
