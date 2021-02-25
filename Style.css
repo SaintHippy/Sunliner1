@@ -1,5 +1,4 @@
 body{
-    top: ;
     background-image: url(./Resources/BWpromo.jpeg);
     background-attachment: fixed;
     background-size: 100%;
@@ -7,30 +6,45 @@ body{
 }
 
 header {
+    background-color: black;
     width: 100%;
     top: 0;
-    position: sticky;
+    position: fixed;
     display: block;
 }
 
 .containerRow {
-    position: relative;
-    display: flex;
+    top: 200px;
+    margin: 20px auto 20px auto;
+    position: absolute;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .counterCol {
-    margin: 20px 100px 10px auto;
+    margin: 20px auto;
     width: 50%;    
-    position: relative;
+    position: absolute;
     display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.containerText {
+    top: 200px;
+    position: absolute;
+    display: flex;
+    margin: 50px auto 50px auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background: rgba(38, 233, 13, 0.75);
+}
+
 .frontPageText {
+    padding: 20px;
     margin: 50px auto 20px auto;
     width: 50%;
     position: relative;
@@ -73,6 +87,7 @@ header {
 }
 
 .image{
+    position: absolute;
     margin: 5px auto 10px auto;
     height: 75px;
     width: 75px;
@@ -87,11 +102,63 @@ header {
     display: inline-block;
 }
 
+.containerPics {
+    background: rgba(37, 247, 10, 0.65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    min-height: 100px;
+    max-height: auto;
+    min-width: 100px;
+    max-width: 80%;
+    width: 80%;
+}
+
+.picFrame {
+    position: relative;
+    display: inline-flex;
+    border: 5px solid seagreen;
+    margin: 40px;    
+}
+
+.caption {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 14px;
+    margin-left: 20px;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+    color: black;
+    opacity: 0.75;
+    
+}
+
 #headerLinks {
     color: cadetblue;
     text-align: center;
 }
 
+#tourPage {
+    background-image: url(./Resources/Tour_talkBackG.jpg);
+    position: static;
+    background-size: auto;
+}
 
+#tourBack {
+    background: rgba(255, 164, 152, 0.75)
+}
 
+#tourFront {
+    background: rgba(250, 100, 80, 0.5);
+}
 
+#archivePage {
+    background-image: url(./Resources/DeadWeightBackG.jpg);
+    position: static;
+    background-size: auto;
+}
