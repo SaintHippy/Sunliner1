@@ -1,7 +1,5 @@
 body{
-    background-image: url(./Resources/BWpromo.jpeg);
-    background-attachment: fixed;
-    background-size: 100%;
+    
     font-family: "montserrat";
 }
 
@@ -40,7 +38,7 @@ header {
     width: 100%;
     text-align: center;
     justify-content: center;
-    background: rgba(38, 233, 13, 0.75);
+
 }
 
 .frontPageText {
@@ -52,6 +50,9 @@ header {
     background: rgba(240, 248, 255, .75);
     text-align: center;
     font-weight: bolder;
+    border: 3px solid rgb(85, 99, 114);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+
 }
 
 .imgLogo {
@@ -68,7 +69,9 @@ header {
     font-weight: bolder;
     width: 100%;
     background: rgba(240, 248, 255, .5);  
-    position: sticky;  
+    position: sticky; 
+    border: 3px solid rgb(84, 98, 112);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
 }
 
 .socials {
@@ -76,6 +79,9 @@ header {
     margin: 50px auto 20px auto;
     display: block;
     background: rgba(240, 248, 255, .5);
+    border: 3px solid slategrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+
 }
 
 .title {
@@ -86,11 +92,19 @@ header {
     text-shadow: 2px 2px darkgrey;
 }
 
+.iconImage {
+    position: relative;
+    margin: 5px auto 10px auto;
+    height: 75px;
+    width: 75px;
+}
+
 .image{
     position: absolute;
     margin: 5px auto 10px auto;
     height: 75px;
     width: 75px;
+    align-self: center;
 }
 
 .quotes {
@@ -103,39 +117,72 @@ header {
 }
 
 .containerPics {
-    background: rgba(37, 247, 10, 0.65);
+    background-repeat: repeat;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    position: absolute;
-    min-height: 100px;
-    max-height: auto;
-    min-width: 100px;
-    max-width: 80%;
-    width: 80%;
+    position: relative;
+    min-height: min-content;
+    min-width: min-content;
+    flex: 2 1 auto;
 }
 
-.picFrame {
+.containerPics #archiveBack {
+    border: 5px solid rgb(20, 90, 51);
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 90%;
+    height: 200%;
+    opacity: 0.6;
+    background-repeat: repeat-y;
+}
+
+.containerPics .picFrame {
     position: relative;
     display: inline-flex;
-    border: 5px solid seagreen;
-    margin: 40px;    
+    flex-wrap: wrap;
+    border: 5px solid rgb(20, 90, 51);
+    margin: 15px;
+    max-height: auto;
+
+    height: auto;
+    min-height: 250px;
+    min-width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    align-self: center;
 }
 
 .caption {
     display: block;
-    font-family: 'Playfair Display', serif;
     font-size: 14px;
     font-style: italic;
     line-height: 14px;
     margin-left: 20px;
     padding: 10px;
-    position: relative;
+    position: absolute;
     background-color: white;
     color: black;
     opacity: 0.75;
     
+}
+
+#headBackBio {
+    background-color: rgba(105, 105, 105, 0.753);
+}
+
+#headBackMedia {
+    background-color: rgba(0, 128, 128, 0.76);
+}
+
+#headBackTour {
+    background-color: rgba(245, 135, 83, 0.76);
+}
+
+#headBackArch {
+    background-color: rgb(106, 255, 47, 0.75);
 }
 
 #headerLinks {
@@ -143,10 +190,17 @@ header {
     text-align: center;
 }
 
+#bioPage {
+    background-image: url(./Resources/BWpromo.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 #tourPage {
     background-image: url(./Resources/Tour_talkBackG.jpg);
     position: static;
-    background-size: auto;
+    background-size: 300px 300px;
+    background-attachment: fixed;
 }
 
 #tourBack {
@@ -160,5 +214,6 @@ header {
 #archivePage {
     background-image: url(./Resources/DeadWeightBackG.jpg);
     position: static;
-    background-size: auto;
+    background-size: 300px 300px;
+    background-attachment: fixed;
 }
