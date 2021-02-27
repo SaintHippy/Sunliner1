@@ -5,10 +5,12 @@ body{
 
 header {
     background-color: black;
+    display: flex;
     width: 100%;
     top: 0;
     position: fixed;
     display: block;
+    align-items: flex-start;
 }
 
 .containerRow {
@@ -38,7 +40,6 @@ header {
     width: 100%;
     text-align: center;
     justify-content: center;
-
 }
 
 .frontPageText {
@@ -60,18 +61,20 @@ header {
     margin: 20px auto 10px auto;  
     text-align: center;
     position: sticky;
-    float: top;    
+    
 }
 
 .links {
+    position: fixed;
     font-family: 'Bebas neue';
     font-size: 40px;
     font-weight: bolder;
     width: 100%;
-    background: rgba(240, 248, 255, .5);  
-    position: sticky; 
+    background: rgba(240, 248, 255, .5); 
     border: 3px solid rgb(84, 98, 112);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    z-index: 10; 
 }
 
 .socials {
