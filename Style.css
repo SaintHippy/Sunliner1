@@ -1,5 +1,5 @@
+  
 body{
-    
     font-family: "montserrat";
 }
 
@@ -8,9 +8,26 @@ header {
     display: flex;
     width: 100%;
     top: 0;
-    position: fixed;
     display: block;
     align-items: flex-start;
+    
+    z-index: 9;
+}
+
+.bioPage {
+    background-image: url(./Resources/BWpromo.jpeg);
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.containerNav {
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .containerRow {
@@ -28,7 +45,7 @@ header {
     position: absolute;
     display: block;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -59,32 +76,40 @@ header {
 .imgLogo {
     display: block;
     margin: 20px auto 10px auto;  
-    text-align: center;
-    position: sticky;
-    
+    text-align: center;   
 }
 
-.links {
-    position: fixed;
-    font-family: 'Bebas neue';
-    font-size: 40px;
-    font-weight: bolder;
-    width: 100%;
-    background: rgba(240, 248, 255, .5); 
-    border: 3px solid rgb(84, 98, 112);
+containerNav {
+    position: sticky;
     top: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    width: 100%;
+    background: rgba(240, 248, 255, .5);
+    border: 3px solid rgb(84, 98, 112);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
     z-index: 10; 
 }
 
-.socials {
+.links {
+    font-family: 'Bebas neue';
+    font-size: 40px;
+    font-weight: bolder;
+    color: cadetblue;
+    text-align: center;
+    width: 100%;
+}
+
+.socials,
+.containerNav {
+    position: sticky;
+    top: 0;
     font-family: 'Bebas Neue';
     margin: 50px auto 20px auto;
     display: block;
     background: rgba(240, 248, 255, .5);
     border: 3px solid slategrey;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
-
+    z-index: 10;
 }
 
 .title {
@@ -98,8 +123,8 @@ header {
 .iconImage {
     position: relative;
     margin: 5px auto 10px auto;
-    height: 75px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
 }
 
 .image{
@@ -186,17 +211,6 @@ header {
 
 #headBackArch {
     background-color: rgb(106, 255, 47, 0.75);
-}
-
-#headerLinks {
-    color: cadetblue;
-    text-align: center;
-}
-
-#bioPage {
-    background-image: url(./Resources/BWpromo.jpeg);
-    background-attachment: fixed;
-    background-size: 100%;
 }
 
 #tourPage {
