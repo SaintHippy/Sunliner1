@@ -102,7 +102,7 @@ containerNav {
 .socials,
 .containerNav {
     position: sticky;
-    top: 0;
+    top: 6px;
     font-family: 'Bebas Neue';
     margin: 50px auto 20px auto;
     display: block;
