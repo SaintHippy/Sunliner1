@@ -4,13 +4,9 @@ body{
 }
 
 header {
-    background-color: black;
     display: flex;
     width: 100%;
     top: 0;
-    display: block;
-    align-items: flex-start;
-    
     z-index: 9;
 }
 
@@ -18,16 +14,7 @@ header {
     background-image: url(./Resources/BWpromo.jpeg);
     background-attachment: fixed;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.containerNav {
-    position: sticky;
-    top: 0;
-    width: 100%;
+    display: block;    
 }
 
 .containerRow {
@@ -42,8 +29,8 @@ header {
 .counterCol {
     margin: 20px auto;
     width: 50%;    
-    position: absolute;
-    display: block;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -79,17 +66,6 @@ header {
     text-align: center;   
 }
 
-containerNav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: rgba(240, 248, 255, .5);
-    border: 3px solid rgb(84, 98, 112);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: block;
-    z-index: 10; 
-}
-
 .links {
     font-family: 'Bebas neue';
     font-size: 40px;
@@ -97,6 +73,15 @@ containerNav {
     color: cadetblue;
     text-align: center;
     width: 100%;
+    position: sticky;
+    top: 0;
+   
+}
+
+.containerNav {
+    width: 100%;
+    top: 0;
+    display: block;
 }
 
 .socials,
@@ -104,7 +89,6 @@ containerNav {
     position: sticky;
     top: 6px;
     font-family: 'Bebas Neue';
-    margin: 50px auto 20px auto;
     display: block;
     background: rgba(240, 248, 255, .5);
     border: 3px solid slategrey;
